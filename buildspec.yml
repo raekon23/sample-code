@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Nothing to do yet
+artifacts:
+  files:
+    - index.html
+    - favicon.ico
+    - analyzing_the_role_and_skills_of_cloud_architect.pdf
+    - styles/main.css
+    - images/*
