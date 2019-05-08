@@ -19,5 +19,9 @@ def lambda_handler(event, context):
     		portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
     
     print "Job Done!"
-    
+    try:
+        topic.publish(Subject="Portfolio Deployed", Message="Portfolio deployed successfully!")
+    except:
+        topic.publish(Subject="Portfolio  Deployment Failed", Message="Portfolio was not deployed successfully!")
+
     return 'Hello from Lambda'
