@@ -3,7 +3,8 @@ version: 0.1
 phases:
   build:
     commands:
-      - echo Nothing to do yet
+      - npm install
+      - nom run webpack
 artifacts:
   files:
     - index.html
@@ -11,3 +12,4 @@ artifacts:
     - analyzing_the_role_and_skills_of_cloud_architect.pdf
     - styles/main.css
     - images/*
+    - dist/bundle.js
