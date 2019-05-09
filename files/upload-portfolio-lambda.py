@@ -2,6 +2,7 @@ import boto3
 from botocore.client import Config
 import StringIO
 import zipfile
+import mimetypes
     
 def lambda_handler(event, context):
     sns = boto3.resource('sns')
